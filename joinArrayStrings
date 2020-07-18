@@ -21,3 +21,4 @@ function joinArrayStrings(a,b) {
 		}
 }
 joinArrayStrings(firstNames,lastNames);
+f
