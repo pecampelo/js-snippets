@@ -1,0 +1,23 @@
+const firstNames = ['John', 'David', 'Robert', 'Leonardo', 'Kim' , 'Jackson', 'Pedro'];
+const lastNames = ['Washington', 'Beckham', 'Chambers', 'Redford', 'DiCaprio', 'Peralta'];
+
+function joinArrayStrings(a,b) {
+	let i, h = 0;
+    let fullNames = [];
+    for (i = 0; i < b.length; i++) {
+			if (a[i] !== 'undefined' && b[i] !== 'undefined') {
+        		for (h = 0; h < a.length; h++) {
+                	fullNames.push(a[h] + ' ' + b[i]);    
+            }
+    	} else {
+      			document.write(`There are things out of place. Check names, please.`);
+            break;
+      }
+    }
+    fullNames.forEach(listArray);    
+    function listArray(item, index) {
+  		index = index + 1;
+			document.write (index + " - " + item + "<br>"); 
+		}
+}
+joinArrayStrings(firstNames,lastNames);
