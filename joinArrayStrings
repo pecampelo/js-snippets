@@ -1,3 +1,6 @@
+// combinations of clothes, jewelry, glasses, shoes, breakfast
+// combinations of food that would count macros
+
 const firstNames = ['John', 'David', 'Robert', 'Leonardo', 'Kim' , 'Jackson', 'Pedro'];
 const lastNames = ['Washington', 'Beckham', 'Chambers', 'Redford', 'DiCaprio', 'Peralta'];
 
@@ -21,4 +24,3 @@ function joinArrayStrings(a,b) {
 		}
 }
 joinArrayStrings(firstNames,lastNames);
-f
