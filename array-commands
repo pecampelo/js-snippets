@@ -1,0 +1,10 @@
+let me = [1,2,3,4,5,6] , let me2 = [6,5,4,3,2,1];
+let me3 = me.concat(me2);
+console.log(Array.isArray(me3));
+me3.fill('do me', 5 , 6);
+slice
+splice
+shift
+unshift
+prototype
+forEach();
