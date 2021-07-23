@@ -1,0 +1,28 @@
+{
+  "name": "js-snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jokenpo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc",
+    "dev-ts": "ts-node-dev --respawn --transpile-only src/users.ts",
+    "dev-js": "nodemon dist/users.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pecampelo/js-snippets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pecampelo/js-snippets/issues"
+  },
+  "homepage": "https://github.com/pecampelo/js-snippets#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
