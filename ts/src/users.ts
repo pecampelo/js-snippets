@@ -26,7 +26,7 @@ let userList: User[] = [
     { firstName: "Pedro", lastName: "Matheus", email: "pedrohcmatheus@gmail.com", isClient: false, isAdmin: true, id: 0 },
 ];
 
-let hitList: User[]; 
+let hitList: User[];
 
 function addUser(newUser) {
     let quantityOfUsers = userList.length;
@@ -42,7 +42,7 @@ function findUserByPropertyValue(list, value) {
         for (const element of list) {
             for (const property in element) {
                 let hit = compareFormattedValues(element[property], value);
-                if (hit === true) {  
+                if (hit === true) {
                     numberOfHits++;
                     hitList.push(element);
                 }
@@ -60,9 +60,9 @@ function compareFormattedValues(valueInsideProperty: string, valueSearched: stri
 }
 
 function formatValuesAsStrings(valueInsideProperty, valueSearched) {
-    if (typeof valueInsideProperty === 'string' && typeof valueSearched === 'string') { 
-        let formattedValueSearched = valueSearched.toLowerCase(); 
-        let formattedValueInsideProperty = valueInsideProperty.toLowerCase(); 
+    if (typeof valueInsideProperty === 'string' && typeof valueSearched === 'string') {
+        let formattedValueSearched = valueSearched.toLowerCase();
+        let formattedValueInsideProperty = valueInsideProperty.toLowerCase();
     } else {
         valueSearched = valueSearched;
         valueInsideProperty = valueInsideProperty;

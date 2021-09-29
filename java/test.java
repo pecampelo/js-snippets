@@ -1,4 +1,5 @@
-public class Main {
+public class test {
+
 	public static void main(String[] args) {
 
 		// Variables: case-sensitive, try using descriptive names.
@@ -9,11 +10,11 @@ public class Main {
 		final String name = "Pedro Henrique Campelo Matheus"; // final will seal the variable.
 		String greeting = "Hello, " + name;
 		byte age = 25;                  		// stores whole numbers from -128 to 127 (counts 0)
-		short birthYear = 1995          		// stores whole numbers from -32,768 to -32,767
-		int problems = 2000000          		// stores whole numbers from -2,147,483,648 to 2,147,483,647
-		long hairFollicles =  90000000000L   // stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+		short birthYear = 1995;          		// stores whole numbers from -32,768 to -32,767
+		int problems = 2000000;         		// stores whole numbers from -2,147,483,648 to 2,147,483,647
+		long hairFollicles =  90000000000L;   // stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 		float ageFloat = 25.9f;             // Precise up to 7 decimal numbers
-		double half = 19.99d                // stores fractions up to 15 decimal numbers;
+		double half = 19.99d;                // stores fractions up to 15 decimal numbers;
 		char initial = 'P';									// stores letters or ASCII values
 		boolean personality = true;
 
