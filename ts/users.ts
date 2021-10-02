@@ -28,18 +28,18 @@ let userList: User[] = [
 
 let hitList: User[];
 
-function addUser(newUser) {
+function addUser(newUser: User) {
     let quantityOfUsers = userList.length;
     newUser.id = quantityOfUsers;
     userList.push(newUser);
     console.log(`New user ${newUser.firstName} added to User List!`);
 }
 
-function findUserByPropertyValue(list, value) {
+function findUserByPropertyValue(list: Array<any>, value: string): void {
     let numberOfHits = 0;
     let hitList = [];
     do {
-        for (const element of list) {
+        for (let element of list) {
             for (const property in element) {
                 let hit = compareFormattedValues(element[property], value);
                 if (hit === true) {
@@ -59,18 +59,16 @@ function compareFormattedValues(valueInsideProperty: string, valueSearched: stri
     else { return false; }
 }
 
-function formatValuesAsStrings(valueInsideProperty, valueSearched) {
+function formatValuesAsStrings(valueInsideProperty: any, valueSearched: any): Array<string> {
     if (typeof valueInsideProperty === 'string' && typeof valueSearched === 'string') {
-        let formattedValueSearched = valueSearched.toLowerCase();
-        let formattedValueInsideProperty = valueInsideProperty.toLowerCase();
-    } else {
-        valueSearched = valueSearched;
-        valueInsideProperty = valueInsideProperty;
-        }
+        valueSearched.toLowerCase();
+        valueInsideProperty.toLowerCase();
+    } else {}
+		return [valueSearched, valueInsideProperty];
 }
 
-addUser({ firstName: "Kimberly", lastName: "Borges", login: "kimborgesvalerio@gmail.com", isAdmin: true});
-addUser({ firstName: "Pedro", lastName: "Latro", isClient: true, login: "pedrolatro@gmail.com"});
+addUser({ firstName: "Kimberly", lastName: "Borges", email: "kimborgesvalerio@gmail.com", isAdmin: true});
+addUser({ firstName: "Pedro", lastName: "Latro", isClient: true, email: "pedrolatro@gmail.com"});
 addUser({ firstName: "Gregório", lastName: "Mazzo"});
 
-let test = findUserByPropertyValue(userList, "Pedro");
+const find = findUserByPropertyValue(userList, "Pedro");

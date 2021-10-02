@@ -27,7 +27,10 @@ public class test {
 
 		// https://www.w3schools.com/java/java_operators.asp
 
-
+		System.out.println(birthYear);
+		System.out.println(problems);
+		System.out.println(hairFollicles);
+		System.out.println(half);
 		System.out.println(greeting);
 		System.out.println(age);
 		System.out.println(ageFloat);

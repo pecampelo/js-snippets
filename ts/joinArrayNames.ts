@@ -1,5 +1,7 @@
 function joinArrayStrings(list1: string[] | string, list2: string[] | string) {
-	let i: number, h: number, fullNames: string[];
+	let i: number;
+	let h: number;
+	let fullNames: string[] = [];
     for (i = 0; i < list2.length; i++) {
 			if (list1[i] !== 'undefined' && list2[i] !== 'undefined') {
        	for (h = 0; h < list2.length; h++) {
@@ -7,7 +9,7 @@ function joinArrayStrings(list1: string[] | string, list2: string[] | string) {
         }
       } else {
     		  console.log(`Arrays must be strings / There is an uneven number of strings.`);
-          break;
+          return;
       }
     }
   }
